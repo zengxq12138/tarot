@@ -1,0 +1,82 @@
+{
+  "common": {
+    "appName": "塔罗占卜",
+    "startReading": "开始占卜",
+    "login": "登录",
+    "register": "注册",
+    "logout": "退出登录",
+    "history": "占卜历史",
+    "favorites": "我的收藏",
+    "admin": "管理后台",
+    "language": "语言",
+    "save": "保存",
+    "cancel": "取消",
+    "close": "关闭",
+    "share": "分享",
+    "download": "下载",
+    "loading": "加载中...",
+    "back": "返回"
+  },
+  "auth": {
+    "email": "邮箱",
+    "password": "密码",
+    "loginTitle": "登录账户",
+    "registerTitle": "创建账户",
+    "noAccount": "还没有账户？",
+    "hasAccount": "已有账户？",
+    "loginAction": "登录",
+    "registerAction": "注册",
+    "welcomeBonus": "注册即赠 100 积分"
+  },
+  "home": {
+    "title": "探索命运的奥秘",
+    "subtitle": "用塔罗的智慧，照亮前行的道路",
+    "cta": "开启占卜"
+  },
+  "ritual": {
+    "questionPlaceholder": "请在心中默念你的问题，然后写下来...",
+    "askQuestion": "你想问什么？",
+    "startShuffle": "开始洗牌",
+    "pickCard": "选出第 {position} 张牌",
+    "past": "过去",
+    "present": "现在",
+    "future": "未来",
+    "reveal": "揭晓",
+    "upright": "正位",
+    "reversed": "逆位",
+    "interpreting": "塔罗为你解读...",
+    "interpretationReady": "解读完成"
+  },
+  "interpretation": {
+    "cardMeaning": "牌面含义",
+    "position": "正逆位解析",
+    "impact": "对当前问题的影响",
+    "advice": "综合建议",
+    "disclaimer": "塔罗占卜仅供参考，人生方向始终掌握在你自己手中。"
+  },
+  "history": {
+    "title": "占卜历史",
+    "empty": "还没有占卜记录",
+    "favorite": "收藏",
+    "unfavorite": "取消收藏",
+    "viewDetail": "查看详情",
+    "noFavorites": "还没有收藏的占卜"
+  },
+  "points": {
+    "balance": "积分余额",
+    "insufficient": "积分不足",
+    "drawCost": "抽牌消耗 1 积分",
+    "interpretCost": "解读消耗 2 积分",
+    "totalCost": "本次共消耗 3 积分",
+    "bonus": "新用户注册赠送 100 积分"
+  },
+  "admin": {
+    "title": "用户积分管理",
+    "userEmail": "用户邮箱",
+    "pointsBalance": "积分余额",
+    "recharge": "充值",
+    "rechargeAmount": "充值数量",
+    "rechargeSuccess": "充值成功",
+    "transactionHistory": "积分流水"
+  }
+}

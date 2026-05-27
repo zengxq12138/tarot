@@ -1,0 +1,82 @@
+{
+  "common": {
+    "appName": "Tarot Divination",
+    "startReading": "Start Reading",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "history": "History",
+    "favorites": "Favorites",
+    "admin": "Admin",
+    "language": "Language",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "share": "Share",
+    "download": "Download",
+    "loading": "Loading...",
+    "back": "Back"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "loginTitle": "Sign In",
+    "registerTitle": "Create Account",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "loginAction": "Sign In",
+    "registerAction": "Sign Up",
+    "welcomeBonus": "Get 100 points on sign up"
+  },
+  "home": {
+    "title": "Explore the Mysteries of Destiny",
+    "subtitle": "Let the wisdom of Tarot illuminate your path ahead",
+    "cta": "Begin Reading"
+  },
+  "ritual": {
+    "questionPlaceholder": "Hold your question in mind, then write it down...",
+    "askQuestion": "What would you like to ask?",
+    "startShuffle": "Shuffle Cards",
+    "pickCard": "Pick card {position}",
+    "past": "Past",
+    "present": "Present",
+    "future": "Future",
+    "reveal": "Reveal",
+    "upright": "Upright",
+    "reversed": "Reversed",
+    "interpreting": "The cards are speaking...",
+    "interpretationReady": "Reading Complete"
+  },
+  "interpretation": {
+    "cardMeaning": "Card Meaning",
+    "position": "Position Analysis",
+    "impact": "Impact on Your Question",
+    "advice": "Guidance",
+    "disclaimer": "Tarot readings are for reference only. Your life direction is always in your own hands."
+  },
+  "history": {
+    "title": "Reading History",
+    "empty": "No reading history yet",
+    "favorite": "Favorite",
+    "unfavorite": "Unfavorite",
+    "viewDetail": "View Details",
+    "noFavorites": "No favorite readings yet"
+  },
+  "points": {
+    "balance": "Points Balance",
+    "insufficient": "Insufficient Points",
+    "drawCost": "Draw costs 1 point",
+    "interpretCost": "Interpretation costs 2 points",
+    "totalCost": "Total cost: 3 points",
+    "bonus": "New users receive 100 bonus points"
+  },
+  "admin": {
+    "title": "User Points Management",
+    "userEmail": "User Email",
+    "pointsBalance": "Points Balance",
+    "recharge": "Recharge",
+    "rechargeAmount": "Recharge Amount",
+    "rechargeSuccess": "Recharge Successful",
+    "transactionHistory": "Transaction History"
+  }
+}

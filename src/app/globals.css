@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --radius: 0.5rem;
+
+  /* Dark theme base —神秘暗黑风 */
+  --background: #0a0a12;
+  --foreground: #e8e0f0;
+  --card: #12101e;
+  --card-foreground: #e8e0f0;
+  --popover: #1a1530;
+  --popover-foreground: #e8e0f0;
+  --primary: #a78bfa;
+  --primary-foreground: #0a0a12;
+  --secondary: #2d2255;
+  --secondary-foreground: #d4c8f0;
+  --muted: #1e1838;
+  --muted-foreground: #8b7faa;
+  --accent: #7c3aed;
+  --accent-foreground: #f5f0ff;
+  --destructive: #ef4444;
+  --destructive-foreground: #fef2f2;
+  --border: #2a2248;
+  --input: #1e1838;
+  --ring: #a78bfa;
+}
+
+* {
+  border-color: var(--border);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Starfield background pattern */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    radial-gradient(1px 1px at 10% 15%, rgba(168, 139, 250, 0.4), transparent),
+    radial-gradient(1px 1px at 25% 35%, rgba(168, 139, 250, 0.3), transparent),
+    radial-gradient(2px 2px at 40% 10%, rgba(168, 139, 250, 0.5), transparent),
+    radial-gradient(1px 1px at 55% 45%, rgba(168, 139, 250, 0.3), transparent),
+    radial-gradient(2px 2px at 70% 20%, rgba(168, 139, 250, 0.4), transparent),
+    radial-gradient(1px 1px at 85% 30%, rgba(168, 139, 250, 0.3), transparent),
+    radial-gradient(1px 1px at 15% 55%, rgba(168, 139, 250, 0.3), transparent),
+    radial-gradient(2px 2px at 60% 60%, rgba(168, 139, 250, 0.4), transparent),
+    radial-gradient(1px 1px at 90% 60%, rgba(168, 139, 250, 0.3), transparent),
+    radial-gradient(1px 1px at 35% 70%, rgba(168, 139, 250, 0.3), transparent),
+    radial-gradient(2px 2px at 50% 80%, rgba(168, 139, 250, 0.4), transparent),
+    radial-gradient(1px 1px at 75% 75%, rgba(168, 139, 250, 0.3), transparent),
+    radial-gradient(1px 1px at 20% 85%, rgba(168, 139, 250, 0.3), transparent),
+    radial-gradient(2px 2px at 80% 90%, rgba(168, 139, 250, 0.4), transparent),
+    radial-gradient(1px 1px at 45% 90%, rgba(168, 139, 250, 0.3), transparent);
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Selection */
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
 }
